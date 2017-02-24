@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: ca49703f4f5406f4b91d1e41510b4b99
-timeCreated: 1487889719
+guid: 4c7c3b433ce542c4b98aa4e460636ec0
+timeCreated: 1487910221
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -11,47 +11,67 @@ ModelImporter:
     100006: Door_001
     100008: Door_002
     100010: FloorAndWalls
-    100012: //RootNode
-    100014: StallWalls
-    100016: StallWalls_001
-    100018: StallWalls_002
+    100012: Light
+    100014: Light_001
+    100016: Light_002
+    100018: //RootNode
+    100020: StallWalls
+    100022: StallWalls_001
+    100024: StallWalls_002
+    100026: Toilet
     400000: Circle
     400002: Circle_001
     400004: Door
     400006: Door_001
     400008: Door_002
     400010: FloorAndWalls
-    400012: //RootNode
-    400014: StallWalls
-    400016: StallWalls_001
-    400018: StallWalls_002
+    400012: Light
+    400014: Light_001
+    400016: Light_002
+    400018: //RootNode
+    400020: StallWalls
+    400022: StallWalls_001
+    400024: StallWalls_002
+    400026: Toilet
     2300000: Circle
     2300002: Circle_001
     2300004: Door
     2300006: Door_001
     2300008: Door_002
     2300010: FloorAndWalls
-    2300012: StallWalls
-    2300014: StallWalls_001
-    2300016: StallWalls_002
+    2300012: Light
+    2300014: Light_001
+    2300016: Light_002
+    2300018: StallWalls
+    2300020: StallWalls_001
+    2300022: StallWalls_002
+    2300024: Toilet
     3300000: Circle
     3300002: Circle_001
     3300004: Door
     3300006: Door_001
     3300008: Door_002
     3300010: FloorAndWalls
-    3300012: StallWalls
-    3300014: StallWalls_001
-    3300016: StallWalls_002
-    4300000: StallWalls_002
-    4300002: StallWalls_001
-    4300004: Circle_001
-    4300006: Circle
-    4300008: Door_002
-    4300010: Door_001
-    4300012: Door
-    4300014: FloorAndWalls
-    4300016: StallWalls
+    3300012: Light
+    3300014: Light_001
+    3300016: Light_002
+    3300018: StallWalls
+    3300020: StallWalls_001
+    3300022: StallWalls_002
+    3300024: Toilet
+    4300000: Toilet
+    4300002: Light_001
+    4300004: Light
+    4300006: Light_002
+    4300008: StallWalls_002
+    4300010: StallWalls_001
+    4300012: Circle_001
+    4300014: Circle
+    4300016: Door_002
+    4300018: Door_001
+    4300020: Door
+    4300022: FloorAndWalls
+    4300024: StallWalls
     7400000: Default Take
     9500000: //RootNode
   materials:
