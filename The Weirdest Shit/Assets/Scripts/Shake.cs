@@ -15,6 +15,9 @@ public struct ShakeParams {
 
 public class Shake : MonoBehaviour {
 
+	public bool shakePos;
+	public bool shakeRot;
+
 	public ShakeParams[] positionShakes;
 	public ShakeParams[] rotationShakes;
 	Vector3[] positionPhases;
@@ -47,28 +50,31 @@ public class Shake : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Vector3 pos = originalPosition;
-		for (int i = 0; i<positionShakes.Length; i++){
-			ShakeParams param = positionShakes[i];
-			Vector3 phase = positionPhases[i];
-			pos += new Vector3(
-				Mathf.Sin(Time.time*Mathf.PI*2*param.frequency+phase.x)*param.amplitude,
-				Mathf.Sin(Time.time*Mathf.PI*2*param.frequency+phase.y)*param.amplitude,
-				Mathf.Sin(Time.time*Mathf.PI*2*param.frequency+phase.z)*param.amplitude
-			);
+		if (shakePos){
+			Vector3 pos = originalPosition;
+			for (int i = 0; i<positionShakes.Length; i++){
+				ShakeParams param = positionShakes[i];
+				Vector3 phase = positionPhases[i];
+				pos += new Vector3(
+					Mathf.Sin(Time.time*Mathf.PI*2*param.frequency+phase.x)*param.amplitude,
+					Mathf.Sin(Time.time*Mathf.PI*2*param.frequency+phase.y)*param.amplitude,
+					Mathf.Sin(Time.time*Mathf.PI*2*param.frequency+phase.z)*param.amplitude
+				);
+			}
+			transform.localPosition = pos;
 		}
-		transform.localPosition = pos;
-
-		Vector3 rot = originalRotation;
-		for (int i = 0; i<rotationShakes.Length; i++){
-			ShakeParams param = rotationShakes[i];
-			Vector3 phase = rotationPhases[i];
-			rot += new Vector3(
-				Mathf.Sin(Time.time*Mathf.PI*2*param.frequency+phase.x)*param.amplitude,
-				Mathf.Sin(Time.time*Mathf.PI*2*param.frequency+phase.y)*param.amplitude,
-				Mathf.Sin(Time.time*Mathf.PI*2*param.frequency+phase.z)*param.amplitude
-			);
+		if (shakeRot){
+			Vector3 rot = originalRotation;
+			for (int i = 0; i<rotationShakes.Length; i++){
+				ShakeParams param = rotationShakes[i];
+				Vector3 phase = rotationPhases[i];
+				rot += new Vector3(
+					Mathf.Sin(Time.time*Mathf.PI*2*param.frequency+phase.x)*param.amplitude,
+					Mathf.Sin(Time.time*Mathf.PI*2*param.frequency+phase.y)*param.amplitude,
+					Mathf.Sin(Time.time*Mathf.PI*2*param.frequency+phase.z)*param.amplitude
+				);
+			}
+			transform.localRotation = Quaternion.Euler(rot);
 		}
-		transform.localRotation = Quaternion.Euler(rot);
 	}
 }
