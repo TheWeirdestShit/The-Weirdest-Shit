@@ -14,6 +14,7 @@ public class PopInUI : MonoBehaviour {
 	public float damp;
 
 	float position;
+	float scalePos;
 	float velocity;
 
 	public bool popped;
@@ -24,6 +25,7 @@ public class PopInUI : MonoBehaviour {
 	void Start () {
 		rct = GetComponent<RectTransform>();
 		position = (popped ? 1 : 0);
+		scalePos = position;
 		velocity = 0;
 	}
 	
@@ -39,12 +41,19 @@ public class PopInUI : MonoBehaviour {
 
 		position += velocity * Time.deltaTime;
 		position = Mathf.Max(position, 0);
+
+		if (popped){
+			scalePos = Mathf.Max(scalePos, position);
+		} else {
+			scalePos = Mathf.Min(scalePos, position);
+		}
+
 		if (rct != null)
 		{
-			rct.localScale = Vector3.Lerp(fromScale, toScale, position);
+			rct.localScale = Vector3.Lerp(fromScale, toScale, scalePos);
 			rct.localRotation = Quaternion.SlerpUnclamped(Quaternion.Euler(fromRotation), Quaternion.Euler(toRotation), position);
 		} else {
-			transform.localScale = Vector3.Lerp(fromScale, toScale, position);
+			transform.localScale = Vector3.Lerp(fromScale, toScale, scalePos);
 			transform.localRotation = Quaternion.SlerpUnclamped(Quaternion.Euler(fromRotation), Quaternion.Euler(toRotation), position);
 		}
 	}
