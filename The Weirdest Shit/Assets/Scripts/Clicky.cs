@@ -25,7 +25,6 @@ public class Clicky : MonoBehaviour {
 	public void DoClick(){
 		RaycastHit rch;
 		if (Physics.Raycast(transform.position, transform.forward, out rch)){
-			Debug.Log("Yo");
 			lastHit = rch.point;
 			Button butt = rch.collider.GetComponent<Button>();
 
