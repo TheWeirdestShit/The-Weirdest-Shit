@@ -165,8 +165,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: 0.5}
-  m_SizeDelta: {x: 2, y: 1}
+  m_AnchoredPosition: {x: -1, y: 0.7}
+  m_SizeDelta: {x: 19.78, y: 5.13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &150205132
 MonoBehaviour:
@@ -194,10 +194,10 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 7
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 1
+    m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: New Text
@@ -259,7 +259,7 @@ MonoBehaviour:
   toRotation: {x: 0, y: 0, z: 0}
   spring: 200
   damp: 11
-  popped: 0
+  popped: 1
 --- !u!1 &851259978
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,10 +427,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
+    m_BestFit: 1
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -511,18 +511,18 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1275065334}
-  m_LocalRotation: {x: -0.50513023, y: 0, z: 0, w: 0.8630431}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1715390537}
   - {fileID: 452375961}
-  m_Father: {fileID: 1520722287}
+  m_Father: {fileID: 1653405622}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -60.68, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.249}
+  m_AnchoredPosition: {x: -1, y: 0.251}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1275065336
@@ -542,7 +542,7 @@ MonoBehaviour:
   toRotation: {x: 0, y: 0, z: 0}
   spring: 200
   damp: 11
-  popped: 0
+  popped: 1
 --- !u!1 &1329473931
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,10 +599,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
+    m_BestFit: 1
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -627,8 +627,9 @@ GameObject:
   - component: {fileID: 1405797578}
   - component: {fileID: 1405797577}
   - component: {fileID: 1405797576}
+  - component: {fileID: 1405797579}
   m_Layer: 0
-  m_Name: Poopy events
+  m_Name: Poopy stuff
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -679,6 +680,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1405797579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1405797575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44670cf5a1ea34a5ca318443eb9002e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: {fileID: 2800000, guid: 70f7a0744947f4d4f85803f7469d8743, type: 3}
 --- !u!1 &1520722282
 GameObject:
   m_ObjectHideFlags: 0
@@ -691,6 +704,8 @@ GameObject:
   - component: {fileID: 1520722285}
   - component: {fileID: 1520722284}
   - component: {fileID: 1520722283}
+  - component: {fileID: 1520722288}
+  - component: {fileID: 1520722289}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -713,12 +728,12 @@ MonoBehaviour:
   pops:
   - piu: {fileID: 1653405623}
     turnOn: 0
-    turnOff: 0.15
+    turnOff: 0.2
   - piu: {fileID: 1275065336}
-    turnOn: 0.5
-    turnOff: 0.05
+    turnOn: 0.8
+    turnOff: 0
   - piu: {fileID: 452375962}
-    turnOn: 0.6
+    turnOn: 0.9
     turnOff: 0
 --- !u!114 &1520722284
 MonoBehaviour:
@@ -756,7 +771,7 @@ MonoBehaviour:
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 100
+  m_DynamicPixelsPerUnit: 40
 --- !u!223 &1520722286
 Canvas:
   m_ObjectHideFlags: 0
@@ -787,15 +802,109 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1653405622}
-  - {fileID: 1275065335}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.516, y: -2.56}
-  m_SizeDelta: {x: 2, y: 1}
+  m_AnchoredPosition: {x: 0.516, y: -2.988}
+  m_SizeDelta: {x: 2, y: 2}
   m_Pivot: {x: 1, y: 0}
+--- !u!114 &1520722288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1520722282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a29f4fc557c7458483d15c1760d5b5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sequencer: {fileID: 1520722283}
+  promptText: {fileID: 150205132}
+  responseButtons:
+  - {fileID: 1715390538}
+  - {fileID: 851259980}
+  Interactions:
+  - Prompt: Hey there, what are you doing?
+    Responses:
+    - Nothing much...
+    - I'm pooping
+    wait: 3
+  - Prompt: Oh, right... How's that working out?
+    Responses:
+    - Okay, I guess?
+    - Things could be better...
+    wait: 1
+  - Prompt: Fair enough, where are you headed?
+    Responses:
+    - To a job interview
+    - Holidays
+    wait: 1
+  - Prompt: Hang on a second...
+    Responses:
+    - Oh, sure...
+    wait: 1
+  - Prompt: Yeah, so you were saying?
+    Responses:
+    - Things are getting better
+    - I'm confused
+    wait: 4
+  - Prompt: Oh, that's nice!
+    Responses:
+    - Yeah... How about you?
+    - I'm sorry, what?
+    wait: 1
+  - Prompt: Sorry, hold that thought
+    Responses:
+    - Okay...
+    wait: 1
+  - Prompt: 'Sorry about that, where were we? '
+    Responses:
+    - I was asking how you were doing
+    - I still don't understand
+    wait: 4
+  - Prompt: I guess it depends who you ask, really...
+    Responses:
+    - How come?
+    - I know what you mean
+    wait: 1
+  - Prompt: I feel like I've been driving all the time this week
+    Responses:
+    - Yeah, me too
+    - Can't catch a break, huh?
+    wait: 1
+  - Prompt: Yeah, sorry, I'm going to hang up. Some idiot keeps answering from the
+      other stall...
+    Responses:
+    - Sorry...
+    wait: 1
+--- !u!114 &1520722289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1520722282}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b68d2b8687734816a5394ccf6dd6cdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionShakes:
+  - frequency: 0.1
+    amplitude: 0.025
+  - frequency: 0.11
+    amplitude: 0.025
+  - frequency: 0.09
+    amplitude: 0.025
+  rotationShakes:
+  - frequency: 0.2
+    amplitude: 1
+  - frequency: 0.1
+    amplitude: 0.5
+  - frequency: 0.05
+    amplitude: 0.25
 --- !u!1 &1600264739
 GameObject:
   m_ObjectHideFlags: 0
@@ -910,6 +1019,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 150205131}
+  - {fileID: 1275065335}
   m_Father: {fileID: 1520722287}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -934,7 +1044,7 @@ MonoBehaviour:
   fromRotation: {x: 0, y: 0, z: 130}
   toRotation: {x: 0, y: 0, z: 0}
   spring: 200
-  damp: 15
+  damp: 14
   popped: 0
 --- !u!1 &1715390536
 GameObject:
