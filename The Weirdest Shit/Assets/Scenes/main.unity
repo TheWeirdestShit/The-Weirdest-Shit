@@ -840,17 +840,41 @@ MonoBehaviour:
   - Prompt: Fair enough, where are you headed?
     Responses:
     - To a job interview
-    - My mum's place in Eaton
+    - Holidays
     wait: 1
   - Prompt: Hang on a second...
     Responses:
-    - Oh, right, sure...
+    - Oh, sure...
     wait: 1
-  - Prompt: Yeah, so er... How's your mum doing?
+  - Prompt: Yeah, so you were saying?
     Responses:
-    - I er... She's okay?
-    - I haven't seen her in a while...
-    wait: 5
+    - Things are getting better
+    - I'm confused
+    wait: 4
+  - Prompt: Oh, that's nice!
+    Responses:
+    - Yeah... How about you?
+    - I'm sorry, what?
+    wait: 1
+  - Prompt: Sorry, hold that thought
+    Responses:
+    - Okay...
+    wait: 1
+  - Prompt: 'Sorry about that, where were we? '
+    Responses:
+    - I was asking how you were doing
+    - I still don't understand
+    wait: 4
+  - Prompt: I guess it depends who you ask, really...
+    Responses:
+    - How come?
+    - I know what you mean
+    wait: 1
+  - Prompt: I feel like I've been driving all the time this week
+    Responses:
+    - Yeah, me too
+    - Can't catch a break, huh?
+    wait: 1
   - Prompt: Yeah, sorry, I'm going to hang up. Some idiot keeps answering from the
       other stall...
     Responses:
@@ -862,7 +886,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1520722282}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2b68d2b8687734816a5394ccf6dd6cdc, type: 3}
   m_Name: 
