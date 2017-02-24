@@ -259,7 +259,7 @@ MonoBehaviour:
   toRotation: {x: 0, y: 0, z: 0}
   spring: 200
   damp: 11
-  popped: 0
+  popped: 1
 --- !u!1 &851259978
 GameObject:
   m_ObjectHideFlags: 0
@@ -542,7 +542,7 @@ MonoBehaviour:
   toRotation: {x: 0, y: 0, z: 0}
   spring: 200
   damp: 11
-  popped: 0
+  popped: 1
 --- !u!1 &1329473931
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,8 +627,9 @@ GameObject:
   - component: {fileID: 1405797578}
   - component: {fileID: 1405797577}
   - component: {fileID: 1405797576}
+  - component: {fileID: 1405797579}
   m_Layer: 0
-  m_Name: Poopy events
+  m_Name: Poopy stuff
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -679,6 +680,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1405797579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1405797575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44670cf5a1ea34a5ca318443eb9002e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: {fileID: 2800000, guid: 70f7a0744947f4d4f85803f7469d8743, type: 3}
 --- !u!1 &1520722282
 GameObject:
   m_ObjectHideFlags: 0
@@ -793,8 +806,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.516, y: -2.56}
-  m_SizeDelta: {x: 2, y: 1}
+  m_AnchoredPosition: {x: 0.516, y: -2.988}
+  m_SizeDelta: {x: 2, y: 2}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1520722288
 MonoBehaviour:
@@ -981,7 +994,7 @@ MonoBehaviour:
   fromRotation: {x: 0, y: 0, z: 130}
   toRotation: {x: 0, y: 0, z: 0}
   spring: 200
-  damp: 15
+  damp: 14
   popped: 0
 --- !u!1 &1715390536
 GameObject:
