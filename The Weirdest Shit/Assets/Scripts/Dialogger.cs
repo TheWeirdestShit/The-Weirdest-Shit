@@ -8,46 +8,64 @@ public struct InteractionStep {
 	public string Prompt;
 	public string[] Responses;
 
+	public float wait;
 }
 
 public class Dialogger : MonoBehaviour {
+
+	public PopSequencer sequencer;
 
 	public Text promptText;
 	public Button[] responseButtons;
 
 	int current = -1;
 
+	float time;
+	bool showing;
+	bool switched;
+
 	public List<InteractionStep> Interactions;
 
 	// Use this for initialization
 	void Start () {
 		foreach (Button butt in responseButtons) {
-			butt.onClick.AddListener(NextStep);
+			butt.onClick.AddListener(Press);
 		}
-		NextStep();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+		Press();
 	}
 
-	public void NextStep(){
+	public void Press(){
+		showing = false;
+		sequencer.popped = false;
+		if (current+1<Interactions.Count)
+			StartCoroutine(StepAndDisplayAfter(Interactions[current+1].wait));
+	}
+
+
+
+	void NextStep(){
 		current++;
 		if (current<Interactions.Count){
 			InteractionStep istep = Interactions[current];
 			promptText.text = istep.Prompt;
 			int m = Mathf.Min(istep.Responses.Length, responseButtons.Length);
 			for (int i = 0; i<m; i++){
-				responseButtons[i].enabled = true;
+				responseButtons[i].gameObject.SetActive(true);
 				Text text = responseButtons[i].GetComponentInChildren<Text>();
 				if (text!=null){
 					text.text = istep.Responses[i];
 				}
 			}
 			for (int i = m; i<responseButtons.Length;i++){
-				responseButtons[i].enabled = false;
+				responseButtons[i].gameObject.SetActive(false);
 			}
 		}
 	}
+
+	IEnumerator StepAndDisplayAfter(float seconds){
+		yield return new WaitForSeconds(seconds);
+		NextStep();
+		sequencer.popped = true;
+	}
+	
 }
