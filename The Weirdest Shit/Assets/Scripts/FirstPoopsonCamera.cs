@@ -16,8 +16,9 @@ public class FirstPoopsonCamera : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		Cursor.lockState = CursorLockMode.Locked;
-		Cursor.visible = false;
+		//Cursor.lockState = CursorLockMode.Locked;
+		//Cursor.visible = true;
+
 		if (cameraAnchor==null)
 		{
 			cameraAnchor = GetComponentInChildren<Transform>();
@@ -27,6 +28,8 @@ public class FirstPoopsonCamera : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
+		Cursor.lockState = CursorLockMode.Locked;
+		Cursor.visible = false;
 		xRot += Input.GetAxis("Mouse X")*sensitivity;
 		yRot += Input.GetAxis("Mouse Y")*sensitivity;
 		yRot = Mathf.Clamp(yRot, -maxAngle, maxAngle);
