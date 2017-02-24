@@ -1,0 +1,325 @@
+fileFormatVersion: 2
+guid: c1a7daa1223f1d54c9ab07f43f973b88
+timeCreated: 1487956482
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Arm_l
+    100002: Arm_r
+    100004: Armature
+    100006: Foot_l
+    100008: Foot_r
+    100010: forearm_l
+    100012: forearm_r
+    100014: //RootNode
+    100016: hand_l
+    100018: hand_r
+    100020: Head
+    100022: index2_l
+    100024: index2_r
+    100026: index3_l
+    100028: index3_r
+    100030: index_l
+    100032: index_r
+    100034: Knee_l
+    100036: Knee_l_001
+    100038: Leg_l
+    100040: Leg_r
+    100042: Low_Poly_Characte_000_Mesh_001
+    100044: middle2_l
+    100046: middle2_l_001
+    100048: middle3_l
+    100050: middle3_r
+    100052: middle_l
+    100054: middle_l_001
+    100056: Neck
+    100058: pinky2_l
+    100060: pinky2_l_001
+    100062: pinky3_l
+    100064: pinky3_r
+    100066: pinky_l
+    100068: pinky_l_001
+    100070: Rib_cage
+    100072: ring2_l
+    100074: ring2_l_001
+    100076: ring3_l
+    100078: ring3_l_001
+    100080: ring_l
+    100082: ring_l_001
+    100084: Shoulder_l
+    100086: Shoulder_r
+    100088: Spine
+    100090: thumb2_l
+    100092: thumb2_r
+    100094: thumb3_l
+    100096: thumb3_r
+    100098: thumb_l
+    100100: thumb_r
+    100102: Toes_l
+    100104: Toes_r
+    100106: Torso
+    400000: Arm_l
+    400002: Arm_r
+    400004: Armature
+    400006: Foot_l
+    400008: Foot_r
+    400010: forearm_l
+    400012: forearm_r
+    400014: //RootNode
+    400016: hand_l
+    400018: hand_r
+    400020: Head
+    400022: index2_l
+    400024: index2_r
+    400026: index3_l
+    400028: index3_r
+    400030: index_l
+    400032: index_r
+    400034: Knee_l
+    400036: Knee_l_001
+    400038: Leg_l
+    400040: Leg_r
+    400042: Low_Poly_Characte_000_Mesh_001
+    400044: middle2_l
+    400046: middle2_l_001
+    400048: middle3_l
+    400050: middle3_r
+    400052: middle_l
+    400054: middle_l_001
+    400056: Neck
+    400058: pinky2_l
+    400060: pinky2_l_001
+    400062: pinky3_l
+    400064: pinky3_r
+    400066: pinky_l
+    400068: pinky_l_001
+    400070: Rib_cage
+    400072: ring2_l
+    400074: ring2_l_001
+    400076: ring3_l
+    400078: ring3_l_001
+    400080: ring_l
+    400082: ring_l_001
+    400084: Shoulder_l
+    400086: Shoulder_r
+    400088: Spine
+    400090: thumb2_l
+    400092: thumb2_r
+    400094: thumb3_l
+    400096: thumb3_r
+    400098: thumb_l
+    400100: thumb_r
+    400102: Toes_l
+    400104: Toes_r
+    400106: Torso
+    4300000: Low_Poly_Characte_000_Mesh_001
+    7400000: Default Take
+    7400002: ArmatureAction
+    7400004: HandAnimation
+    9500000: //RootNode
+    13700000: Low_Poly_Characte_000_Mesh_001
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: HandAnimation
+      takeName: ArmatureAction
+      firstFrame: 0
+      lastFrame: 251
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Spine
+        weight: 1
+      - path: Armature/Spine/Leg_l
+        weight: 1
+      - path: Armature/Spine/Leg_l/Knee_l
+        weight: 1
+      - path: Armature/Spine/Leg_l/Knee_l/Foot_l
+        weight: 1
+      - path: Armature/Spine/Leg_l/Knee_l/Foot_l/Toes_l
+        weight: 1
+      - path: Armature/Spine/Leg_r
+        weight: 1
+      - path: Armature/Spine/Leg_r/Knee_l_001
+        weight: 1
+      - path: Armature/Spine/Leg_r/Knee_l_001/Foot_r
+        weight: 1
+      - path: Armature/Spine/Leg_r/Knee_l_001/Foot_r/Toes_r
+        weight: 1
+      - path: Armature/Spine/Rib_cage
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Neck
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Neck/Head
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_l
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_l/Arm_l
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_l/Arm_l/forearm_l
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_l/Arm_l/forearm_l/hand_l
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_l/Arm_l/forearm_l/hand_l/index_l
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_l/Arm_l/forearm_l/hand_l/index_l/index2_l
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_l/Arm_l/forearm_l/hand_l/index_l/index2_l/index3_l
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_l/Arm_l/forearm_l/hand_l/middle_l
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_l/Arm_l/forearm_l/hand_l/middle_l/middle2_l
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_l/Arm_l/forearm_l/hand_l/middle_l/middle2_l/middle3_l
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_l/Arm_l/forearm_l/hand_l/pinky_l
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_l/Arm_l/forearm_l/hand_l/pinky_l/pinky2_l
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_l/Arm_l/forearm_l/hand_l/pinky_l/pinky2_l/pinky3_l
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_l/Arm_l/forearm_l/hand_l/ring_l
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_l/Arm_l/forearm_l/hand_l/ring_l/ring2_l
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_l/Arm_l/forearm_l/hand_l/ring_l/ring2_l/ring3_l
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_l/Arm_l/forearm_l/hand_l/thumb_l
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_l/Arm_l/forearm_l/hand_l/thumb_l/thumb2_l
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_l/Arm_l/forearm_l/hand_l/thumb_l/thumb2_l/thumb3_l
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_r
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_r/Arm_r
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_r/Arm_r/forearm_r
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_r/Arm_r/forearm_r/hand_r
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_r/Arm_r/forearm_r/hand_r/index_r
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_r/Arm_r/forearm_r/hand_r/index_r/index2_r
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_r/Arm_r/forearm_r/hand_r/index_r/index2_r/index3_r
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_r/Arm_r/forearm_r/hand_r/middle_l_001
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_r/Arm_r/forearm_r/hand_r/middle_l_001/middle2_l_001
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_r/Arm_r/forearm_r/hand_r/middle_l_001/middle2_l_001/middle3_r
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_r/Arm_r/forearm_r/hand_r/pinky_l_001
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_r/Arm_r/forearm_r/hand_r/pinky_l_001/pinky2_l_001
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_r/Arm_r/forearm_r/hand_r/pinky_l_001/pinky2_l_001/pinky3_r
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_r/Arm_r/forearm_r/hand_r/ring_l_001
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_r/Arm_r/forearm_r/hand_r/ring_l_001/ring2_l_001
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_r/Arm_r/forearm_r/hand_r/ring_l_001/ring2_l_001/ring3_l_001
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_r/Arm_r/forearm_r/hand_r/thumb_r
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_r/Arm_r/forearm_r/hand_r/thumb_r/thumb2_r
+        weight: 1
+      - path: Armature/Spine/Rib_cage/Torso/Shoulder_r/Arm_r/forearm_r/hand_r/thumb_r/thumb2_r/thumb3_r
+        weight: 1
+      - path: Low_Poly_Characte_000_Mesh_001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
