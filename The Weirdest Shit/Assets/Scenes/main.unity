@@ -2214,7 +2214,7 @@ MonoBehaviour:
     Responses:
     - Nothing much...
     - I'm pooping
-    wait: 3
+    wait: 30
   - Prompt: Oh, right... How's that working out?
     Responses:
     - Okay, I guess?
@@ -2267,6 +2267,78 @@ MonoBehaviour:
     Responses:
     - '...'
     wait: 3
+  - Prompt: Hey
+    Responses:
+    - Please, I'm pooping
+    - Er... hey?
+    wait: 45
+  - Prompt: Want to earn some money?
+    Responses:
+    - What?
+    - No, go away...
+    wait: 1
+  - Prompt: One hundred dollars, cash!
+    Responses:
+    - Fuck off!
+    - One hundred dollars?
+    wait: 1
+  - Prompt: Just answer one simple question!
+    Responses:
+    - Please! I'm trying to poop!
+    - Fine, what's your question?
+    wait: 1
+  - Prompt: What's the difference between a pigeon?
+    Responses:
+    - That makes no sense!
+    - Wait, what?
+    wait: 1
+  - Prompt: Correct!
+    Responses:
+    - What... the... fuck?
+    - Are you for real?
+    wait: 1
+  - Prompt: Well done, you win!
+    Responses:
+    - So, do I get the cash now?
+    - Okay?
+    wait: 1
+  - Prompt: Damn, I though I had the cash...
+    Responses:
+    - For fuck's sake
+    - This is so dumb
+    wait: 1
+  - Prompt: I er... I have to go now...
+    Responses:
+    - Okay, bye!
+    - Good riddance!
+    wait: 1
+  - Prompt: Are we friends now?
+    Responses:
+    - Maybe?
+    - No!
+    wait: 1
+  - Prompt: Thank you, you're beautiful
+    Responses:
+    - You too?
+    - Okay...
+    wait: 1
+  - Prompt: Bye!
+    Responses:
+    - Bye...
+    wait: 3
+  - Prompt: Are you still there?
+    Responses:
+    - '...'
+    wait: 6
+  - Prompt: I love you
+    Responses:
+    - GO AWAY!
+    - '...'
+    wait: 8
+  - Prompt: Sorry, bye...
+    Responses:
+    - '...'
+    wait: 8
 --- !u!114 &1520722289
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1393,9 +1393,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flash: {fileID: 0}
-  minTime: 5
-  maxTime: 30
+  minTime: 15
+  maxTime: 45
   creepTime: 2
+  firstCreep: 15
 --- !u!114 &114837164096219030
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -10,6 +10,7 @@ public class Creeper : MonoBehaviour {
 	public float minTime;
 	public float maxTime;
 	public float creepTime;
+	public float firstCreep = 15;
 	float rpick;
 	float time;
 
@@ -17,12 +18,13 @@ public class Creeper : MonoBehaviour {
 	void Start () {
 		piu = GetComponent<PopInUI>();
 		Reset();
+		time = -firstCreep;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		time += Time.deltaTime;
-		float teatime = Mathf.Lerp(minTime, maxTime, rpick);
+		float teatime = Mathf.LerpUnclamped(minTime, maxTime, rpick);
 		if (flash!=null)
 			flash.SetActive(time>teatime+Mathf.Lerp(0,creepTime,0.45f) && time<teatime+Mathf.Lerp(0,creepTime,0.55f));
 		if (time<teatime){
