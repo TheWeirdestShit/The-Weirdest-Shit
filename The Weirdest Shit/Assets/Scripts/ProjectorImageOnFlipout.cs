@@ -13,6 +13,10 @@ public class ProjectorImageOnFlipout : MonoBehaviour {
 	void Start () {
 		fo = GetComponent<FlipOut>();
 		proj = GetComponent<Projector>();
+
+		Material mat = new Material(proj.material);
+		mat.SetTexture("_ShadowTex", images.pickRandom());
+		proj.material = mat;
 	}
 	
 	// Update is called once per frame
