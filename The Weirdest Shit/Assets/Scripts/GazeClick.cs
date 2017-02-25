@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class GazeClick : MonoBehaviour {
 
+	public Image gazeDisplay;
 	public float clickIn;
 	float time;
 	
@@ -27,6 +28,10 @@ public class GazeClick : MonoBehaviour {
 		} else {
 			time = clickIn;
 		}
-		
+		if (gazeDisplay!=null){
+			Material mat = new Material(gazeDisplay.material);
+			mat.SetFloat("_Value",Mathf.Clamp01(1-(time/clickIn)));
+			gazeDisplay.material = mat;
+		}
 	}
 }
