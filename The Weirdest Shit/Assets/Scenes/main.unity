@@ -501,6 +501,7 @@ MonoBehaviour:
   minTime: 15
   maxTime: 60
   creepTime: 2
+  firstCreep: 60
 --- !u!114 &360441857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1363,12 +1364,12 @@ Prefab:
     - target: {fileID: 114623496286240024, guid: 7052f578338fc4ce9802328298a846cd,
         type: 2}
       propertyPath: minTime
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 114623496286240024, guid: 7052f578338fc4ce9802328298a846cd,
         type: 2}
       propertyPath: maxTime
-      value: 45
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7052f578338fc4ce9802328298a846cd, type: 2}
@@ -2214,7 +2215,7 @@ MonoBehaviour:
     Responses:
     - Nothing much...
     - I'm pooping
-    wait: 30
+    wait: 23
   - Prompt: Oh, right... How's that working out?
     Responses:
     - Okay, I guess?
@@ -2783,6 +2784,7 @@ GameObject:
   - component: {fileID: 1600264745}
   - component: {fileID: 1600264746}
   - component: {fileID: 1600264747}
+  - component: {fileID: 1600264748}
   m_Layer: 0
   m_Name: Poop eyes
   m_TagString: MainCamera
@@ -2896,6 +2898,86 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gazeDisplay: {fileID: 199318159}
   clickIn: 1.5
+--- !u!82 &1600264748
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1600264739}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: cce7bbe9b999648a2949d37dfd9e1bf7, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 1
+  BypassListenerEffects: 1
+  BypassReverbZones: 1
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &1631588190
 GameObject:
   m_ObjectHideFlags: 0
@@ -3534,12 +3616,17 @@ Prefab:
     - target: {fileID: 114623496286240024, guid: 7052f578338fc4ce9802328298a846cd,
         type: 2}
       propertyPath: minTime
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 114623496286240024, guid: 7052f578338fc4ce9802328298a846cd,
         type: 2}
       propertyPath: maxTime
-      value: 45
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 114623496286240024, guid: 7052f578338fc4ce9802328298a846cd,
+        type: 2}
+      propertyPath: firstCreep
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7052f578338fc4ce9802328298a846cd, type: 2}
