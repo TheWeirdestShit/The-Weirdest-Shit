@@ -5,6 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(PopInUI))]
 public class Creeper : MonoBehaviour {
 
+	AudioSource asource;
+
 	PopInUI piu;
 	public GameObject flash;
 	public float minTime;
@@ -19,14 +21,19 @@ public class Creeper : MonoBehaviour {
 		piu = GetComponent<PopInUI>();
 		Reset();
 		time = -firstCreep;
+		asource = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		time += Time.deltaTime;
 		float teatime = Mathf.LerpUnclamped(minTime, maxTime, rpick);
-		if (flash!=null)
+		if (flash!=null){
 			flash.SetActive(time>teatime+Mathf.Lerp(0,creepTime,0.45f) && time<teatime+Mathf.Lerp(0,creepTime,0.55f));
+			if (asource!=null && !asource.isPlaying){
+				//asource.Play();
+			}
+		}
 		if (time<teatime){
 			piu.popped = false;
 		} else {

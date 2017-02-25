@@ -11,9 +11,13 @@ public struct InteractionStep {
 	public float wait;
 }
 
+
 public class Dialogger : MonoBehaviour {
 
+	public AudioClip[] ac;
 	public PopSequencer sequencer;
+
+	AudioSource asource;
 
 	public Text promptText;
 	public Button[] responseButtons;
@@ -28,6 +32,7 @@ public class Dialogger : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		asource = GetComponent<AudioSource>();
 		foreach (Button butt in responseButtons) {
 			butt.onClick.AddListener(Press);
 		}
@@ -66,6 +71,10 @@ public class Dialogger : MonoBehaviour {
 		yield return new WaitForSeconds(seconds);
 		NextStep();
 		sequencer.popped = true;
+		if (asource!=null && ac.Length>0){
+			asource.clip = ac.pickRandom();
+			asource.Play();
+		}
 	}
 	
 }

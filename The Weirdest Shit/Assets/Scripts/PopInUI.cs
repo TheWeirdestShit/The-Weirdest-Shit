@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class PopInUI : MonoBehaviour {
 
+	public AudioClip popIn;
+	public AudioClip popOut;
+	AudioSource asource;
+	bool wasPopped = false;
+
 	public Vector3 fromScale;
 	public Vector3 toScale;
 
@@ -27,6 +32,8 @@ public class PopInUI : MonoBehaviour {
 		position = (popped ? 1 : 0);
 		scalePos = position;
 		velocity = 0;
+		wasPopped = popped;
+		asource = GetComponent<AudioSource>();
 	}
 	
 	void FixedUpdate(){
@@ -34,6 +41,19 @@ public class PopInUI : MonoBehaviour {
 
 		velocity += error * spring * Time.fixedDeltaTime;
 		velocity -= velocity * damp * Time.fixedDeltaTime;
+
+		if (asource!=null && popped != wasPopped){
+			if (popped){
+				if (popOut!=null)
+					asource.clip = popOut;
+			} else {
+				if (popIn!=null)
+					asource.clip = popIn;
+			}
+			wasPopped = popped;
+			asource.Play();
+		}
+
 	}
 
 	// Update is called once per frame
